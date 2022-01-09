@@ -1,0 +1,4 @@
+#!/bin/sh
+
+alias v="nvim"
+alias pac="doas pacman"

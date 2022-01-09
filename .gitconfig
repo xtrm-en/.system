@@ -1,0 +1,10 @@
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
+[user]
+	name = xtrm-en
+	email = 26600206+xtrm-en@users.noreply.github.com
+[core]
+	autocrlf = input
+	editor = nvim
