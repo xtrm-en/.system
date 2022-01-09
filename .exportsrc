@@ -1,6 +1,8 @@
 #!/bin/sh
 
 export PATH="$HOME/.local/bin:/usr/local/bin:$PATH"
+
 export ZSH="/home/xtrm/.oh-my-zsh"
+export SDKMAN_DIR="$HOME/.sdkman"
 
 export EDITOR=nvim
