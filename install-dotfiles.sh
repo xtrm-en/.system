@@ -8,7 +8,7 @@ git pull origin main;
 function install() {
     cp -aRfs $FULLPATH/dotfiles/ ~;
     cd ~/dotfiles
-    cp -av . ../
+    cp -af --copy-contents ./ ../
     cd ..
     rm -rf ~/dotfiles
 }
