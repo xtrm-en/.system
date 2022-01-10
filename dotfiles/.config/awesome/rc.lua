@@ -356,4 +356,4 @@ beautiful.notification_fg = '#d4be98'
 awful.spawn.with_shell("feh --bg-fill ~/Pictures/Wallpapers/default.jpg")
 
 -- Autorun Programs
-awful.spawn.with_shell("~/.config/autostart/userscripts.sh")
+awful.spawn.with_shell("/bin/bash ~/scripts/startup.sh")
