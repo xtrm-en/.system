@@ -4,7 +4,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git)
 
 [[ -s "$HOME/.exportsrc" ]] && source "$HOME/.exportsrc"
-[[ -s "$HOME/.aliasrc" ]]   && source "$HOME/.aliasrc"
+
+[[ -s "$HOME/.aliasrc" ]] && source "$HOME/.aliasrc"
 
 source $ZSH/oh-my-zsh.sh
 

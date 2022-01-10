@@ -2,4 +2,4 @@
 
 alias v="nvim"
 alias pac="doas pacman"
-alias ls="ls -lahgS"
+alias l="ls -lahgS --color=always"
