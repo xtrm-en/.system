@@ -24,7 +24,7 @@ colorscheme onedark
 syntax on
 
 " Position in code
-set number
+set number relativenumber
 set ruler
 
 " Don't make noise
@@ -33,5 +33,50 @@ set visualbell
 " default file encoding
 set encoding=utf-8
 
+" Enable autocompletion:
+set wildmode=longest,list,full
+
 " Line wrap
 set wrap
+
+" Highlight search results
+set hlsearch
+set incsearch
+
+" auto + smart indent for code
+set autoindent
+set smartindent
+
+" Mouse support
+set mouse=a
+
+" Map F8 to Tagbar
+nmap <F8> :TagbarToggle<CR>
+
+" disable backup files
+set nobackup
+set nowritebackup
+
+" no delays!
+set updatetime=300
+
+set cmdheight=1
+set shortmess+=c
+
+set signcolumn=yes
+
+" Give more space for displaying messages.
+set cmdheight=2
+
+let g:lightline = {
+	\ 'colorscheme': 'wombat',
+	\ 'active': {
+	\   'left': [ [ 'mode', 'paste' ],
+	\             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+	\ },
+	\ 'component_function': {
+	\   'cocstatus': 'coc#status'
+	\ },
+	\ }
+
+autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
