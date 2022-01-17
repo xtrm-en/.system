@@ -6,3 +6,5 @@ export ZSH="/home/xtrm/.oh-my-zsh"
 export SDKMAN_DIR="$HOME/.sdkman"
 
 export EDITOR=nvim
+
+export GTK_THEME=Materia-dark

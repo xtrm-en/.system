@@ -2,4 +2,4 @@
 
 alias v="nvim"
 alias pac="doas pacman"
-alias l="ls -lahgS --color=always"
+alias l="ls -lahgpS --color=auto --group-directories-first"
