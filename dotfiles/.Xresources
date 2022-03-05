@@ -35,6 +35,7 @@
 *.color7:       #c5c8c6
 *.color15:      #ffffff
 
+
 !! URxvt Appearance
 urxvt*cursorBlink: on
 URxvt.font: xft:Hack Nerd Font Mono:style=Regular:size=13

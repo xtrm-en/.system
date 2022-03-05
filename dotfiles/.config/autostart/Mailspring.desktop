@@ -14,4 +14,4 @@ Actions=NewMessage
 
 [Desktop Action NewMessage]
 Name=New Message
-Exec=mailspring mailto:
+Exec=false=falseHidden=false

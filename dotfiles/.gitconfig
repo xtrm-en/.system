@@ -1,7 +1,7 @@
 [credential]
 	helper = store
 [init]
-	defaultBranch = main
+	defaultBranch = trunk
 [user]
 	name = xtrm-en
 	email = 26600206+xtrm-en@users.noreply.github.com

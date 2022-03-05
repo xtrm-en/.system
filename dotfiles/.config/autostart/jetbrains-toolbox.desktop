@@ -12,4 +12,4 @@ X-GNOME-Autostart-enabled=true
 StartupNotify=false
 X-GNOME-Autostart-Delay=10
 X-MATE-Autostart-Delay=10
-X-KDE-autostart-after=panel
+X-KDE-autostart-after=false=falseHidden=false

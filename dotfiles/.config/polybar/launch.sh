@@ -4,5 +4,5 @@ killall -q polybar
 
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-polybar xtrm &
+polybar --config=/home/xtrm/.config/polybar/config.ini xtrm &
 echo "Launched Polybar [xtrm]"
