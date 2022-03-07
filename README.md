@@ -1,3 +1,3 @@
-# .dotfiles
+# .system
 
-my dotfiles.
+scripts and dotfiles for setup and deployment of my Linux systems. 
