@@ -23,4 +23,4 @@ else
     fi;
 fi;
 
-unset syncAll;
+unset install;
