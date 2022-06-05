@@ -2,6 +2,8 @@
 
 scripts and dotfiles for setup and deployment of my (Arch-based) Linux systems. 
 
+**Note**: if you are looking for my NeoVim configuration, check out [this repo](https://github.com/xtrm-en/.vim).
+
 ## contents
 - dotfiles - My usual configuration dotfiles, including my NeoVim, Polybar, and Window Manager configs.
 - rcs - My rc(s) files, stuff like `bashrc`, `zshrc`, `vimrc`, as well as custom ones like `exportsrc` or `aliasrc`.
