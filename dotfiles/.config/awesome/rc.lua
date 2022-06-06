@@ -130,7 +130,7 @@ globalkeys = gears.table.join(
               {description = "open a browser", group = "launcher"}),
     awful.key({ modkey }, "p", function () awful.spawn("pamac-manager") end,
               {description = "opens pamac", group = "launcher"}),
-    awful.key({ modkey }, "m", function () awful.spawn("discord-canary") end,
+    awful.key({ modkey }, "m", function () awful.spawn("discord") end,
               {description = "opens discord", group = "launcher"}),
     awful.key({ modkey }, "f", function () awful.spawn(files) end,
               {description = "opens file manager", group = "launcher"}),
@@ -338,9 +338,9 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 -- Gaps
-beautiful.useless_gap = 7
+beautiful.useless_gap = 4
 beautiful.border_normal = beautiful.border_focus
-beautiful.border_focus = "#3971ED"
+beautiful.border_focus = "#e36eff"
 
 beautiful.notification_opacity = '100'
 beautiful.notification_icon_size = 80
