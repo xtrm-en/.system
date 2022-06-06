@@ -1,5 +1,10 @@
 #!/bin/sh
 
-alias v="nvim"
 alias pac="doas pacman"
+
 alias l="ls -lahgpS --color=auto --group-directories-first"
+
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
+
