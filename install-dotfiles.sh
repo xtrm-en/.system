@@ -1,9 +1,11 @@
 #!/bin/sh
 
+BRANCH="new"
+
 FULLPATH="$(dirname "$(realpath ${BASH_SOURCE})")"
 cd $FULLPATH
 
-git pull origin main;
+git pull origin $BRANCH;
 
 function install() {
     cp -aRfs $FULLPATH/dotfiles/ ~;
