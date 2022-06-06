@@ -38,10 +38,10 @@
 
 !! URxvt Appearance
 urxvt*cursorBlink: on
-URxvt.font: xft:Hack Nerd Font Mono:style=Regular:size=13
-URxvt.boldFont: xft:Hack Nerd Font Mono:style=Bold:size=13
-URxvt.italicFont: xft:Hack Nerd Font Mono:style=Italic:size=13
-URxvt.boldItalicFont: xft:Hack Nerd Font Mono:style=Bold Italic:size=13
+URxvt.font: xft:JetBrainsMono Nerd Font:style=Regular:size=11
+URxvt.boldFont: xft:JetBrainsMono Nerd Font:style=Bold:size=11
+URxvt.italicFont: xft:JetBrainsMono Nerd Font:style=Italic:size=11
+URxvt.boldItalicFont: xft:JetBrainsMono Nerd Font:style=Bold Italic:size=11
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
 URxvt.geometry: 92x24
