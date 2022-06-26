@@ -130,7 +130,7 @@ globalkeys = gears.table.join(
               {description = "open a browser", group = "launcher"}),
     awful.key({ modkey }, "p", function () awful.spawn("pamac-manager") end,
               {description = "opens pamac", group = "launcher"}),
-    awful.key({ modkey }, "m", function () awful.spawn("discord") end,
+    awful.key({ modkey }, "m", function () awful.spawn("discord-canary") end,
               {description = "opens discord", group = "launcher"}),
     awful.key({ modkey }, "f", function () awful.spawn(files) end,
               {description = "opens file manager", group = "launcher"}),
@@ -285,7 +285,8 @@ awful.rules.rules = {
           "osu",
           "osu!",
           "osu.exe",
-          "osu!.exe"
+          "osu!.exe",
+          "komorebi"
         },
         class = {
           "Arandr",
@@ -298,7 +299,8 @@ awful.rules.rules = {
           "Wpa_gui",
           "veromix",
           "xtightvncviewer",
-          "osu"
+          "osu",
+          "komorebi"
         },
 
         -- Note that the name property shown in xprop might be set slightly after creation of the client
@@ -315,6 +317,8 @@ awful.rules.rules = {
 
     { rule = { instance = "polybar" }, -- no.
        properties = { border_width = 0 } },
+    { rule = { instance = "komorebi" }, 
+       properties = { border_width = 0 } }
 }
 -- }}}
 
@@ -348,7 +352,8 @@ beautiful.notification_bg = '(0,0,0)'
 beautiful.notification_fg = '#d4be98'
 
 -- Wallpaper
-awful.spawn.with_shell("feh --bg-fill ~/Pictures/Wallpapers/default.jpg")
+-- We doin that in startup.sh now
+-- awful.spawn.with_shell("feh --bg-fill ~/Pictures/Wallpapers/default.jpg")
 
 -- Autorun Programs
 awful.spawn.with_shell("chmod +x ~/.config/autostart/startup.sh")

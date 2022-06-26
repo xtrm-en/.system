@@ -11,5 +11,8 @@ dex -a
 # Polkit Manager
 lxsession &
 
+# Background
+feh --bg-fill ~/pics/background.jpg
+
 # Other utilities
 unclutter --timeout 3 &
