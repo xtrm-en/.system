@@ -1,11 +1,36 @@
 #!/bin/sh
 
-export ZSH="$HOME/.oh-my-zsh"
-export SDKMAN_DIR="$HOME/.sdkman"
+# XDG
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CACHE_HOME="$HOME/.cache"
 
+# xdg-ninja unclutter
+export ANDROID_HOME="$XDG_DATA_HOME/android"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+export GRADLE_USER_HOME="$XDG_DATA_HOME/gradle"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
+export LESSHISTFILE="$XDG_CONFIG_HOME/less/history"
+export NUGET_PACKAGES="$XDG_CACHE_HOME/NuGetPackages"
+export NVM_DIR="$XDG_DATA_HOME/nvm"
+export PNPM_HOME="$XDG_DATA_HOME/pnpm"
+export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc"
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
+export SDKMAN_DIR="$XDG_DATA_HOME/sdkman"
+export HISTFILE="$XDG_STATE_HOME/zsh/history"
+export ZSH="$XDG_DATA_HOME/oh-my-zsh"
+# of course this is a problem
+#export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+
+# Other homes
+export OSXCROSS_HOME="/opt/osxcross/bin/"
+
+# Global exports
 export EDITOR=nvim
-
 export GTK_THEME=Materia-dark
-export PNPM_HOME="$HOME/.local/share/pnpm"
 
-export PATH="$HOME/.local/bin:/usr/local/bin:/opt/osxcross/bin:$PNPM_HOME:$PATH"
+# Path definition
+export PATH="$HOME/.local/bin:/usr/local/bin:$CARGO_HOME/bin:$PNPM_HOME:$OSXCROSS_HOME:$PATH"
