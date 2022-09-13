@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Load .exportsrc
+[[ -s "$HOME/.exportsrc" ]] && source "$HOME/.exportsrc"
+
 picom & # compositor
 
 # WM Stuff
@@ -16,3 +19,4 @@ feh --bg-fill ~/pics/background.jpg
 
 # Other utilities
 unclutter --timeout 3 &
+
