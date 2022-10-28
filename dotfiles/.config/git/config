@@ -3,8 +3,9 @@
 [init]
 	defaultBranch = trunk
 [user]
-	name = xtrm-en
-	email = 26600206+xtrm-en@users.noreply.github.com
+	name = xtrm
+	email = oss@xtrm.me
+	signingkey = 995CF44A1CD93202
 [core]
 	autocrlf = input
 	editor = nvim
@@ -14,3 +15,5 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+[commit]
+	gpgsign = true

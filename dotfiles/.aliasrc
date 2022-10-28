@@ -2,7 +2,7 @@
 
 alias pac="doas pacman"
 
-alias l="ls -lahgpS --color=auto --group-directories-first"
+alias l="lsd -lahS --group-directories-first"
 
 alias v="nvim"
 alias vi="nvim"
